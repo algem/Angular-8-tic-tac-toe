@@ -1,0 +1,149 @@
+Welcome to game application program (Tic-Tac-Toe tutorial - Angular 8)
+
+Must have an internet connection.
+Installation Requirements
+1.  Node.js version 12.18.3 or higher
+2.  npm version 6.14.4
+3.  Visual Studio Code Editor
+============================
+run command in as an administrator
+
+Check version in command prompt:
+node -v   //Should be v12.18.3
+npm -v    //Should be 6.14.6
+
+Make a sub directory where you can put your source application
+In my case located in C:\users\al\source\tictactoe 
+(This could not be the same as your)
+
+Change directory C:\users\al\source\tictactoe
+
+Check you Angular version:
+
+ng version
+
+Should be:
+Angular CLI: 10.0.4
+Node: 12.18.3
+OS: Win32 x64
+
+Angular:
+...
+Ivy Workspace:
+
+Pakage				Version
+----------------------- 	---------------
+@angular-devlit/architect	0.1000.4
+@angular-devkit/core		10.0.4
+@angular-devkit/schematics	10.0.4
+@schematics/angular		10.0.4
+@schematics/update		0.1000.4
+rxjs				6.5.5
+--------------------------------------
+
+In C:\users\al\source\tictactoe directory cammand prompt type:
+
+ng new Angular-8-tic-tac-toe
+
+? Would you like to add Angular routing? Yes
+? Which stylesheet format would you like to use?
+> CSS						           < - Select this
+ SCSS   [ https://sass-lang.com/documentation/syntax#scss                 ]  
+  Sass   [ https://sass-lang.com/documentation/syntax#the-indented-syntax ]
+  Less   [ http://lesscss.org                                             ]
+  Stylus [ http://stylus-lang.com                                         ]
+Enter 
+
+cd Angular-8-tic-tac-toe
+
+
+Just to be sure that the angular cli was intalled and other dependencies needed:
+
+npm install -g @angular/cli
+npm install popper --save
+npm install bootstrap --save 
+npm install jquery --save
+npm install --save-dev @angular-devkit/build-angular
+
+Try to run your application made in http://localhost:4200/ in browser for checking an error:
+
+ng serve
+
+if no error exist press Ctrl-C to stop running, then time to customized your application.
+
+
+Let's list out what are component, services, classes and interface for our
+application customization.  We will use Angular CLI and follows best practices and saves much of time.
+
+===================================================================
+===================================================================
+Application Requirements:
+Tic-tac-toe is a paper-and-pencil game for two players, X and O, who take turns marking the spaces of a
+3 _ 3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal
+sequence wins the game.
+Functional Requirements
+ Player 1 plays symbol “X”, player 2 plays symbol “O”.
+ Use the numpad for input (accept numbers 1 through 9): (<-> Not yet implemented instead mouse driven)
+
+	|----------|
+	|7 | 8 | 9 |
+	|4 | 5 | 6 |
+	|1 | 2 | 3 |
+	------------
+ Use the numpad for input (accept numbers 1 through 9):
+– If player 1 wins, prompt using an overlay “Player X Won!”
+– If player 2 wins, prompt using an overlay “Player O Won!”
+– Otherwise prompt using an overlay “Cat’s Game!”
+=======================================================================
+=======================================================================
+
+
+We are going to follow the principle of KISS ("keep it simple, stupid")
+The KISS principle states that most systems work best if they are kept 
+simple rather than making complicated; therefore, simplicity should be a key goal in design,
+and unnecessary complexity should be avoided.
+
+1.) Create components in componentsquare
+ 	 ng g c square
+         ng g c board
+2.) Create services 
+	ng g s checkwinner
+
+3.) We should not create Modules since we have opted to automatically included on this application.
+
+
+4.) Creating an Interface (Not applicable - KISS)
+	 
+5.) Create Class (Not applicable  - KISS)
+	
+-------------------------------------------------
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+================================================================
+
+npm install --save-dev @angular-devkit/build-angular
+
+
+export interface Title{
+color: string;
+cols: number;
+rows: number;
+text: string;
+
+
+ng install bootstrap jquery proper
+
+
